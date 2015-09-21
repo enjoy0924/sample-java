@@ -8,7 +8,7 @@ import org.apache.thrift.transport.TSocket;
 import org.apache.thrift.transport.TTransport;
 import org.apache.thrift.transport.TTransportException;
 
-import com.allere.sample.thrift.HelloWorldService;
+import com.allere.sample.thrift.service.HelloWorldService;
 
 public class HelloSimpleClient {
 	

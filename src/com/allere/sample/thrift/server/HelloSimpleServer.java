@@ -7,8 +7,9 @@ import org.apache.thrift.server.TServer;
 import org.apache.thrift.server.TSimpleServer;
 import org.apache.thrift.transport.TServerSocket;
 
-import com.allere.sample.thrift.HelloWorldImpl;
-import com.allere.sample.thrift.HelloWorldService;
+import com.allere.sample.thrift.service.impl.HelloWorldImpl;
+import com.allere.sample.thrift.service.HelloWorldService;
+import com.allere.sample.thrift.service.HelloWorldService.Iface;
 
 public class HelloSimpleServer {
 	
@@ -18,7 +19,7 @@ public class HelloSimpleServer {
 		try {
 			System.out.println("HelloWorld TSimpleServer start ....");
  
-			TProcessor tprocessor = new HelloWorldService.Processor( new HelloWorldImpl() );
+			TProcessor tprocessor = new HelloWorldService.Processor( (Iface) new HelloWorldImpl() );
  
 			// 简单的单线程服务模型，一般用于测试
 			TServerSocket serverTransport = new TServerSocket(SERVER_PORT);

@@ -1,4 +1,4 @@
-package com.allere.sample.thrift;
+package com.allere.sample.thrift.service.impl;
 /**
  * 这个类用来实现自动生成消息类里面的Iface接口，属于
  * 服务器端的消息处理实现
@@ -6,7 +6,7 @@ package com.allere.sample.thrift;
  */
 import org.apache.thrift.TException;
 
-import com.allere.sample.thrift.HelloWorldService.Iface;
+import com.allere.sample.thrift.service.HelloWorldService.Iface;
 
 public class HelloWorldImpl implements Iface {
 

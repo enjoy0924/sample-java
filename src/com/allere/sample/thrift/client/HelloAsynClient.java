@@ -11,8 +11,8 @@ import org.apache.thrift.protocol.TProtocolFactory;
 import org.apache.thrift.transport.TNonblockingSocket;
 import org.apache.thrift.transport.TNonblockingTransport;
 
-import com.allere.sample.thrift.HelloWorldService;
-import com.allere.sample.thrift.HelloWorldService.AsyncClient.sayHello_call;
+import com.allere.sample.thrift.service.HelloWorldService;
+import com.allere.sample.thrift.service.HelloWorldService.AsyncClient.sayHello_call;
 
 public class HelloAsynClient {
 	public static final String SERVER_IP = "localhost";

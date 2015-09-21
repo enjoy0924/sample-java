@@ -8,7 +8,7 @@ import org.apache.thrift.transport.TTransportException;
 import org.apache.thrift.transport.TFramedTransport;
 import org.apache.thrift.transport.TSocket;
 
-import com.allere.sample.thrift.HelloWorldService;
+import com.allere.sample.thrift.service.HelloWorldService;
 /**
  * 非阻塞客户端
  * 

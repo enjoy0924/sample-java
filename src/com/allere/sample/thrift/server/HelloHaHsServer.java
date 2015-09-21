@@ -7,8 +7,9 @@ import org.apache.thrift.server.TServer;
 import org.apache.thrift.transport.TFramedTransport;
 import org.apache.thrift.transport.TNonblockingServerSocket;
 
-import com.allere.sample.thrift.HelloWorldImpl;
-import com.allere.sample.thrift.HelloWorldService;
+import com.allere.sample.thrift.service.HelloWorldService;
+import com.allere.sample.thrift.service.HelloWorldService.Iface;
+import com.allere.sample.thrift.service.impl.HelloWorldImpl;
 
 /**
  * 半同步半异步模型服务
@@ -23,7 +24,7 @@ public class HelloHaHsServer {
 		try {
 			System.out.println("HelloWorld THsHaServer start ....");
  
-			TProcessor tprocessor = new HelloWorldService.Processor(new HelloWorldImpl());
+			TProcessor tprocessor = new HelloWorldService.Processor((Iface) new HelloWorldImpl());
  
 			TNonblockingServerSocket tnbSocketTransport = new TNonblockingServerSocket(
 					SERVER_PORT);

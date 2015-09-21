@@ -7,8 +7,9 @@ import org.apache.thrift.server.TServer;
 import org.apache.thrift.transport.TFramedTransport;
 import org.apache.thrift.transport.TNonblockingServerSocket;
 
-import com.allere.sample.thrift.HelloWorldImpl;
-import com.allere.sample.thrift.HelloWorldService;
+import com.allere.sample.thrift.service.impl.HelloWorldImpl;
+import com.allere.sample.thrift.service.HelloWorldService;
+import com.allere.sample.thrift.service.HelloWorldService.Iface;
 /**
  * 非阻塞式服务
  * 
@@ -22,7 +23,7 @@ public class HelloNonBlockingServer {
 		try {
 			System.out.println("HelloWorld TNonblockingServer start ....");
  
-			TProcessor tprocessor = new HelloWorldService.Processor(new HelloWorldImpl());
+			TProcessor tprocessor = new HelloWorldService.Processor((Iface) new HelloWorldImpl());
  
 			TNonblockingServerSocket tnbSocketTransport = new TNonblockingServerSocket(
 					SERVER_PORT);
