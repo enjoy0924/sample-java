@@ -18,8 +18,8 @@ TZlibTransport     使用zlib压缩
 
 支持的server
 TSimpleServer       单线程  阻塞
-TThreadPoolServer   多线程  阻塞
-TNonblockingServer  多线程  非阻塞
+TThreadPoolServer   多线程  多线程服务器端使用标准的阻塞式 I/O
+TNonblockingServer  多线程  非阻塞，使用非阻塞方式，用于构建异步客户端，多线程服务器端使用非阻塞式 I/O
 THsHaServer         api说是TNonblockingServer的扩展，半同步半异步，我也看晕了，望指点。。
 
 可定义的数据类型：
