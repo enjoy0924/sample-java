@@ -1,4 +1,4 @@
-package com.allere.sample.broker;
+package com.allere.sample.activeMQ.broker;
 
 import java.net.URI;
 import java.net.URISyntaxException;

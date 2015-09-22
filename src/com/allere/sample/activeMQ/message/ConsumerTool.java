@@ -1,4 +1,4 @@
-package com.allere.sample.message;
+package com.allere.sample.activeMQ.message;
 
 import javax.jms.Connection;     
 import javax.jms.Destination;     
