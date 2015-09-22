@@ -11,7 +11,7 @@ import com.allere.sample.thrift.service.impl.HelloWorldImpl;
 import com.allere.sample.thrift.service.HelloWorldService;
 import com.allere.sample.thrift.service.HelloWorldService.Iface;
 /**
- * 非阻塞式服务
+ * 非阻塞式服务，线程池支持 IO + worker共用线程池
  * 
  * @author G_dragon
  *

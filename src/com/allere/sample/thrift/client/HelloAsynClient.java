@@ -37,6 +37,10 @@ public class HelloAsynClient {
 			CountDownLatch latch = new CountDownLatch(1);
 			AsynCallback callBack = new AsynCallback(latch);
 			System.out.println("call method sayHello start ...");
+			
+			/**
+			 * 异步接口，调用的时候需要传入一个回调函数
+			 */
 			asyncClient.sayHello(userName, callBack);
 			System.out.println("call method sayHello .... end");
 			boolean wait = latch.await(30, TimeUnit.SECONDS);

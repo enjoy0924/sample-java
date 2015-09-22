@@ -10,7 +10,12 @@ import org.apache.thrift.transport.TServerSocket;
 import com.allere.sample.thrift.service.impl.HelloWorldImpl;
 import com.allere.sample.thrift.service.HelloWorldService;
 import com.allere.sample.thrift.service.HelloWorldService.Iface;
-
+/**
+ * 这种方式不推荐在生产环境中使用
+ * 
+ * @author G_dragon
+ *
+ */
 public class HelloSimpleServer {
 	
 	public static final int SERVER_PORT = 8090;

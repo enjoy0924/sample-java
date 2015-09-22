@@ -15,7 +15,12 @@ import com.allere.sample.thrift.service.HelloWorldService;
 import com.allere.sample.thrift.service.TopicService;
 import com.allere.sample.thrift.service.impl.HelloWorldImpl;
 import com.allere.sample.thrift.service.impl.TopicServiceImpl;
-
+/**
+ * 0.9.1引入，支持多种服务的接口实现
+ * 
+ * @author G_dragon
+ *
+ */
 public class MultiServicesServer {
 	
 	public static final int SERVER_PORT = 8090;

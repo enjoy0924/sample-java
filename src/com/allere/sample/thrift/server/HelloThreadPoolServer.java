@@ -10,7 +10,12 @@ import org.apache.thrift.transport.TServerSocket;
 import com.allere.sample.thrift.service.impl.HelloWorldImpl;
 import com.allere.sample.thrift.service.HelloWorldService;
 import com.allere.sample.thrift.service.HelloWorldService.Iface;
-
+/**
+ * 阻塞式的线程池处理
+ * 
+ * @author G_dragon
+ *
+ */
 public class HelloThreadPoolServer {
 	
 	public static final int SERVER_PORT = 8090;
