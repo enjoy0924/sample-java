@@ -1,4 +1,4 @@
-package com.allere.sample.proxy.jdk;
+package com.allere.sample.proxy.object;
 
 /**
  * Created by G_dragon on 2017/3/1.
